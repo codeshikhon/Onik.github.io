@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> javascript-opearetors </title>
+
+    <style>
+        body {
+            background-color: beige;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            border: 2px solid #ddd;
+            padding: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>JavaScript Learning</h1>
+    </div>
+    <script>
+        function myFunction() {
+            return 5 + 10;
+        }
+        //console.log(myfunction());
+
+        function calculator(x, y, z) {
+
+            let output;
+            if ('sum' === z) {
+                output = x + y; //local scope
+
+            }
+            if ('sub' === z) {
+                output = x - y; //local scope
+            }
+
+            return output;
+        }
+
+        let sum = calculator(10, 20, 'sum');
+        let sub = calculator(140, 20, 'sub');
+        console.log(sum);
+        console.log(sub);
+    </script>
+
+
+</body>
+
+
+</html>
