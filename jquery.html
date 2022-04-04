@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Larning jQuery</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <style>
+        body {
+            background-color: beige;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            border: 2px solid #ddd;
+            padding: 30px;
+        }
+    </style>
+
+    <script>
+        // $(document).ready(function () {
+
+
+        // });
+
+        // jQuery(document).ready(function () {
+        //     jQuery('h1').css('color', 'red');
+
+        // });
+
+        // // self invoking function
+
+        // (function ($) {
+        //     alert('skkkkkkk')
+        // })(jQuery);
+
+
+
+    </script>
+
+</head>
+
+<body>
+    <div class="container">
+        <h1> Jquery Learning</h1>
+
+
+        <button id="clickme">
+            Click Me
+        </button>
+
+        <div class="output">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas provident placeat odit. Illum voluptatem et perferendis cupiditate fuga nisi provident eligendi ex autem iusto, neque a pariatur consequuntur repellendus! Blanditiis illum cupiditate autem minus repudiandae quasi delectus voluptates modi reiciendis.</div>
+
+    </div>
+
+
+
+    <script>
+
+        //self invoking function
+
+        (function ($) {
+
+                    // $('#clickme').click(function() {
+                    //                        alert('dddddddrlrred');
+                 
+                    // });
+
+                    // $('#clickme').mouseleave(function() {
+                    //                        alert('djfddrlrred');
+                 
+                    // });
+
+                    // $('#clickme').mouseleave(function() {
+                    //                       alert('djfddrlrred');
+                 
+                    //  });
+
+                     $('#clickme').on('mouseenter mouseleave', function(e) {
+                               
+                        if('mouseenter' == e.type) {
+                                    $('.output').hide();
+                        }
+                        else {
+                            $('.output').show();
+                            $('.output').css('border', '2px solid red');
+                        }
+                 
+                     });
+
+
+
+
+            //     $('h1').css('color', 'red');
+
+            //     $('.container').css({
+            //         'background-color' : 'blue', 
+            //          'max-width' : '1200px',
+            // });
+            // $('h1').css('text-align', 'center');
+
+
+        })(jQuery);
+
+    </script>
+
+
+
+</body>
+
+</html>
