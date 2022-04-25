@@ -37,7 +37,7 @@
             //<span class="dropdown-menu-toggle"></span>
                wp_nav_menu(
                   array(
-                     'theme_location'  => 'Header Menu',
+                     'theme_location'  => 'header-menu',
                      'container'  => 'nav',
                      'container_class'      => 'site-navigation',
                      'container_id'         => 'main-navigation',
